@@ -1,89 +1,103 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Task 3</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Task 4</title>
+  <style>
+    body {
+      background-color: #dbe8e6;
+      font-family: Verdana, Arial, sans-serif;
+    }
+
+    #wrapper {
+      width: 540px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    #header {
+      background-color: #aaeeee;
+      border: 2px solid #aaeeee;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      text-align: right;
+      font-family: "Trebuchet MS", Verdana, sans-serif;
+      font-weight: normal;
+      color: #2a9d9d;
+    }
+
+    #friends {
+      float: left;
+      width: 110px;
+      background-color: #40e0d0;
+      border: 4px solid #1a9c8f;
+      padding: 8px;
+      margin-right: 10px;
+      color: white;
+      font-size: 11px;
+    }
+
+    #entries {
+      float: right;
+      width: 390px;
+    }
+
+    .entry {
+      background-color: #e8fbfb;
+      border: 2px solid #aaeeee;
+      margin-bottom: 10px;
+      padding: 8px;
+      overflow: hidden;
+      font-size: 12px;
+      color: #888888;
+    }
+
+    .date {
+      font-weight: bold;
+      border-bottom: 2px dotted blue;
+    }
+
+    .entry img {
+      float: right;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="wrapper">
 
-<table>
-    <tr>
-        <td colspan="2">
-            <h2>Continental Hotel Reservation Form</h2>
-        </td>
-    </tr>
+    <div id="header">
+      <h1>Victoria's Journal</h1>
+      <p>So fresh and so clean</p>
+    </div>
 
-    <tr>
-        <td class="heading">Name</td>
-        <td><input type="text" placeholder="Enter your name"></td>
-    </tr>
+    <div id="friends">
+      <h2>Friends</h2>
+      <ul>
+        <li>390 Buddies</li>
+        <li>Big Will</li>
+        <li>Conan the Librarian</li>
+      </ul>
+    </div>
 
-    <tr>
-        <td class="heading">eMail</td>
-        <td><input type="text" value="info@continental.pk"></td>
-    </tr>
+    <div id="entries">
 
-    <tr>
-        <td class="heading">Mobile No</td>
-        <td><input type="text" placeholder="Enter your cell number"></td>
-    </tr>
+      <div class="entry">
+        <h3><span class="date">04/09/08:</span> Spatulas</h3>
+        <img src="image1.jfif" width="130">
+        <p>Yesterday, I went to the store and got some much needed spatulas! (what better way to say I love myself than to buy myself a spatula?)</p>
+      </div>
 
-    <tr>
-        <td class="heading">Arrival Time</td>
-        <td><input type="text" placeholder="Enter your arrival time"></td>
-    </tr>
+      <div class="entry">
+        <h3><span class="date">04/08/08:</span> Cookie Cupcakes</h3>
+        <img src="image2.jfif" width="130">
+        <p>My favorite cartoon character is Cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, "Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you." I wonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE!)</p>
+      </div>
 
-    <tr>
-        <td class="heading">Departure</td>
-        <td>
-            <input type="text" size="15">
-            <input type="text" size="15">
-        </td>
-    </tr>
+    </div>
 
-    <tr>
-        <td class="heading">Room Type</td>
-        <td class="options">
-            <input type="radio" name="room">Single
-            <input type="radio" name="room">Double
-            <br>
-            <input type="radio" name="room">Presidential Suite
-        </td>
-    </tr>
-
-    <tr>
-        <td class="heading">Preferences</td>
-        <td class="options">
-            <input type="checkbox">Non-Smoking<br>
-            <input type="checkbox">Internet<br>
-            <input type="checkbox">Firm Mattress
-        </td>
-    </tr>
-
-    <tr>
-        <td class="heading">Mode of Payment</td>
-        <td class="options">
-            <input type="checkbox">Cash
-            <input type="checkbox">Check
-            <br>
-            <input type="checkbox">Credit Card
-
-            <select>
-                <option>Select Card</option>
-                <option>Visa</option>
-                <option>Mastercard</option>
-            </select>
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="2" class="button">
-            <input type="submit" value="Send Data">
-        </td>
-    </tr>
-</table>
-
+  </div>
 </body>
 </html>
-
